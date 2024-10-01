@@ -66,7 +66,19 @@ npm start
 ## Project Structure
 The project follows a standard Next.js directory structure:
 
-src/ ├── app/ │ ├── about/ # About Us Page │ ├── contact/ # Contact Page │ ├── tours/ # Tours Page and Details │ └── layout.tsx # Layout component for shared layouts ├── components/ # Reusable components (BookingForm, Navbar, Footer, etc.) ├── data/ # Data related to tours ├── styles/ # Global CSS files public/ ├── images/ # Static images for the project └── favicon.ico
+src/
+├── app/                        
+│   ├── about/                  # About Us Page
+│   ├── contact/                # Contact Page
+│   ├── tours/                  # Tours Page and Details
+│   └── layout.tsx              # Layout component for shared layouts
+├── components/                 # Reusable components (BookingForm, Navbar, Footer, etc.)
+├── data/                       # Data related to tours
+├── styles/                     # Global CSS files
+public/
+├── images/                     # Static images for the project
+└── favicon.ico
+
 
 ## Pages Overview
 - **Home Page**: Displays an introduction, featured tours, and a general overview of the website’s purpose. Includes animations and smooth transitions using Framer Motion.
