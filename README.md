@@ -44,10 +44,16 @@ Make sure you have the following installed on your machine:
 - [Node.js](https://nodejs.org/) (version 14 or higher)
 - [Git](https://git-scm.com/) for version control
 
-### Installation Steps
+src/
+  ├── app/
+  │   ├── about/                 # About Us Page
+  │   ├── contact/               # Contact Page
+  │   ├── tours/                 # Tours Page and Details
+  │   └── layout.tsx             # Layout component for shared layouts
+  ├── components/                # Reusable components (BookingForm, Navbar, Footer, etc.)
+  ├── data/                      # Data related to tours
+  └── styles/                    # Global CSS files
+public/
+  ├── images/                    # Static images for the project
+  └── favicon.ico
 
-1. **Clone the repository**:
-   ```bash
-   git clone <your-repository-url>
-   cd <project-directory>
-   ```
