@@ -10,8 +10,7 @@
 - [Pages Overview](#pages-overview)
 - [Third-Party Packages](#third-party-packages)
 - [CSS and Responsiveness](#css-and-responsiveness)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Project Overview
 
@@ -44,11 +43,7 @@ Make sure you have the following installed on your machine:
 - [Node.js](https://nodejs.org/) (version 14 or higher)
 - [Git](https://git-scm.com/) for version control
  ###  Installation Steps
- Clone the repository:
 
-
-git clone <your-repository-url>
-cd <project-directory>
 Install dependencies: Navigate to the project directory and install all dependencies using npm or yarn:
 
 npm install
@@ -65,18 +60,32 @@ npm run build
 Run the production build: After building the project, you can run it with:
 
 npm start
+## Project Structure
+The project follows a standard Next.js directory structure:
+
+src/ ├── app/ │ ├── about/ # About Us Page │ ├── contact/ # Contact Page │ ├── tours/ # Tours Page and Details │ └── layout.tsx # Layout component for shared layouts ├── components/ # Reusable components (BookingForm, Navbar, Footer, etc.) ├── data/ # Data related to tours ├── styles/ # Global CSS files public/ ├── images/ # Static images for the project └── favicon.ico
+
+## Pages Overview
+- **Home Page**: Displays an introduction, featured tours, and a general overview of the website’s purpose. Includes animations and smooth transitions using Framer Motion.
+- **Tours/Services Page**: Lists all available tours and services with relevant images, prices, and descriptions. Users can click on individual tours for more details.
+- **Tour Details Page**: Displays detailed information about a specific tour, including images, descriptions, and pricing. Utilizes Next.js dynamic routing to handle tour-specific URLs.
+- **About Us Page**: Provides background information about the company, client testimonials, and key service highlights like safety and priority.
+- **Contact Page**: Allows users to contact the company with inquiries. The contact form includes fields for name, email, and message.
+
+## Third-Party Packages
+- **Next.js**: Framework for building server-rendered or statically-exported React applications.
+- **Framer Motion**: For handling animations across the site.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+- **Heroicons**: SVG icon set used throughout the project.
+- **React Hook Form**: Used for managing the forms on the Contact page.
+
+## CSS and Responsiveness
+The project uses Tailwind CSS to achieve responsiveness across all devices:
+
+- **Mobile-First Design**: The website is designed with mobile responsiveness in mind and adjusts its layout accordingly for larger screen sizes.
+- **Custom Breakpoints**: Tailwind's utility classes ensure that the layout adjusts at predefined breakpoints for mobile, tablet, and desktop devices.
+- **Key Elements**: Elements such as the navigation bar, tour cards, and contact form are fully responsive and optimized for various devices.
+
  
 
-src/
-  ├── app/
-  │   ├── about/                 # About Us Page
-  │   ├── contact/               # Contact Page
-  │   ├── tours/                 # Tours Page and Details
-  │   └── layout.tsx             # Layout component for shared layouts
-  ├── components/                # Reusable components (BookingForm, Navbar, Footer, etc.)
-  ├── data/                      # Data related to tours
-  └── styles/                    # Global CSS files
-public/
-  ├── images/                    # Static images for the project
-  └── favicon.ico
 
