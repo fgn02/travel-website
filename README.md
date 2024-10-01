@@ -43,6 +43,29 @@ Make sure you have the following installed on your machine:
 
 - [Node.js](https://nodejs.org/) (version 14 or higher)
 - [Git](https://git-scm.com/) for version control
+ ###  Installation Steps
+ Clone the repository:
+
+
+git clone <your-repository-url>
+cd <project-directory>
+Install dependencies: Navigate to the project directory and install all dependencies using npm or yarn:
+
+npm install
+# or
+yarn install
+Start the development server: Once dependencies are installed, you can start the local development server:
+
+npm run dev
+# or
+yarn dev
+Build for production: To generate a production build:
+
+npm run build
+Run the production build: After building the project, you can run it with:
+
+npm start
+ 
 
 src/
   ├── app/
