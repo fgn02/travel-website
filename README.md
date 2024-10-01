@@ -9,7 +9,6 @@
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Setup and Installation](#setup-and-installation)
-- [Project Structure](#project-structure)
 - [Pages Overview](#pages-overview)
 - [Third-Party Packages](#third-party-packages)
 - [CSS and Responsiveness](#css-and-responsiveness)
@@ -63,21 +62,6 @@ npm run build
 Run the production build: After building the project, you can run it with:
 
 npm start
-## Project Structure
-The project follows a standard Next.js directory structure:
-
-src/
-├── app/                        
-│   ├── about/                  # About Us Page
-│   ├── contact/                # Contact Page
-│   ├── tours/                  # Tours Page and Details
-│   └── layout.tsx              # Layout component for shared layouts
-├── components/                 # Reusable components (BookingForm, Navbar, Footer, etc.)
-├── data/                       # Data related to tours
-├── styles/                     # Global CSS files
-public/
-├── images/                     # Static images for the project
-└── favicon.ico
 
 
 ## Pages Overview
